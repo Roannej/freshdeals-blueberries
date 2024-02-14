@@ -1,0 +1,22 @@
+.breadcrum li {
+    display: inline;
+  }
+  
+  .breadcrum li.location+li.location::before {
+    content: ">";
+  }
+  
+  .breadcrum li.attribute a {
+    color: blue;
+  }
+  
+  .breadcrum li.attribute::after {
+    content: "x";
+    color: purple;
+    font-size: 8px;
+    vertical-align: super;
+  }
+  /*.breadcrum li:hover {
+    font-weight: bold;
+    font-size: 16px;
+  }*/
